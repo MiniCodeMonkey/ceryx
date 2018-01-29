@@ -5,6 +5,7 @@ services:
     image: sourcelair/ceryx-proxy:latest
     ports:
       - ${CERYX_EXTERNAL_PORT:-80}:80
+      - ${CERYX_EXTERNAL_SSL_PORT:-443}:443
     depends_on:
       - redis
     environment:

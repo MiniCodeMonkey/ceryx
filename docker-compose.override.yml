@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
   proxy:
-    build: ./proxy
+    build: ./dynamic-ssl
     volumes:
       - ./proxy/nginx/conf:/usr/local/openresty/nginx/conf
       - ./proxy/nginx/lualib:/usr/local/openresty/nginx/lualib
